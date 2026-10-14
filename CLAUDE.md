@@ -6,7 +6,7 @@ This repo is a set of agents and skills for editing video and making motion film
 
 - **Captions, cleanup cuts, screen recorded demos:** the `video-editor` agent with the `captions` skill.
 - **Deciding what a film is (idea, beats, flow doc) and reviewing cuts:** the `motion-director` agent with `motion-craft` and `film-taste`.
-- **Building any film or edit beyond captions:** the `motion-designer` agent with `brand-motion`, plus `story-reel`, `footage-sourcing`, `music-and-mix` and `video-qa` as the job needs.
+- **Building any film or edit beyond captions:** the `motion-designer` agent with `brand-motion`, plus `ui-motion`, `story-reel`, `footage-sourcing`, `music-and-mix` and `video-qa` as the job needs.
 - A quick question about a tool or a single command needs no agent. Any real edit goes to an agent with a self contained brief, and you review its stills and master before reporting.
 
 ## The baseline

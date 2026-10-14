@@ -1,0 +1,9 @@
+{
+  "name": "ui-motion-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Frame by frame capture of HTML motion scenes for the ui-motion skill.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

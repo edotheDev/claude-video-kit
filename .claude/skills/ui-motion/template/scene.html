@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>UI motion scene</title>
+<style>
+  /* Real fonts: copy the files into fonts/ beside this page and declare them here, for example
+     @font-face { font-family: "Brand Sans"; src: url("fonts/BrandSans-Variable.ttf"); font-weight: 100 900; } */
+  :root {
+    --sans: "Brand Sans", "Helvetica Neue", Arial, sans-serif;
+    --ground: #f3f3f1;
+    --ink: #141414;
+    --ink-2: #5d5d5a;
+    --ink-3: #9a9a96;
+    --line: #e2e2de;
+    --card: #ffffff;
+  }
+  html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+  body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  /* Key content stays inside the 3:4 box in the middle of 9:16 (y 240 to 1680), so a 3:4 crop keeps it. */
+  #stage { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  #pill { position: absolute; left: 50%; top: 470px; transform: translateX(-50%); display: flex; gap: 14px; align-items: center;
+          padding: 16px 30px; border-radius: 999px; background: var(--card); box-shadow: 0 1px 0 var(--line), 0 10px 30px rgba(0,0,0,.05);
+          font-size: 34px; font-weight: 500; letter-spacing: -0.01em; white-space: nowrap; }
+  #roll { position: relative; display: inline-block; height: 1.15em; overflow: hidden; vertical-align: bottom; min-width: 1.3em; text-align: right; }
+  #roll span { position: absolute; right: 0; top: 0; }
+  #pill .muted { color: var(--ink-2); font-weight: 400; }
+  #card { position: absolute; left: 140px; top: 600px; width: 800px; padding: 40px; box-sizing: border-box; border-radius: 34px;
+          background: var(--card); box-shadow: 0 1px 0 var(--line), 0 40px 90px rgba(0,0,0,.07); }
+  .who { display: flex; align-items: center; gap: 18px; font-size: 28px; color: var(--ink-2); }
+  .avatar { width: 54px; height: 54px; border-radius: 50%; background: #d9d4cb; }
+  .bubble { margin-top: 22px; display: inline-block; padding: 22px 28px; border-radius: 26px 26px 26px 8px; background: #efefec; font-size: 36px; }
+  #draft { margin-top: 34px; padding: 28px 30px; border-radius: 22px; border: 1.5px solid var(--line); }
+  #draft .label { position: relative; font-size: 24px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
+  #draft .label span { position: absolute; }
+  #draft .label .l2 { opacity: 0; }
+  #draft p { margin: 14px 0 0; font-size: 36px; line-height: 1.32; }
+  #actions { margin-top: 30px; display: flex; justify-content: flex-end; gap: 16px; }
+  .btn { padding: 20px 32px; border-radius: 999px; font-size: 28px; font-weight: 500; }
+  .ghost { color: var(--ink-2); border: 1.5px solid var(--line); }
+  #send { position: relative; background: var(--ink); color: #fff; min-width: 250px; text-align: center; }
+  #send span { display: block; }
+  #send .s2 { position: absolute; left: 0; right: 0; top: 20px; opacity: 0; }
+  #caption { position: absolute; left: 0; right: 0; top: 1420px; text-align: center; font-size: 56px; font-weight: 500; letter-spacing: -0.015em; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="pill"><span id="roll"><span class="n1">12</span><span class="n2">11</span></span><span class="muted">to answer</span></div>
+
+  <div id="card">
+    <div class="who"><div class="avatar"></div><span>A customer, 2 min ago</span></div>
+    <div class="bubble" id="msg">Do you ship to Singapore?</div>
+    <div id="draft">
+      <div class="label"><span class="l1">Draft</span><span class="l2">Sent</span>&nbsp;</div>
+      <p>Yes, we do. Orders to Singapore usually take 4 to 6 days.</p>
+    </div>
+    <div id="actions"><div class="btn ghost" id="redo">Draft again</div><div class="btn" id="send"><span class="s1">Approve and send</span><span class="s2">Sent</span></div></div>
+  </div>
+
+  <div id="caption"></div>
+</div>
+<script type="module" src="scene.js"></script>
+</body>
+</html>

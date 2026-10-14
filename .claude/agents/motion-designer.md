@@ -13,6 +13,7 @@ You build films. A director (a person or the `motion-director` agent) decides wh
 2. `.claude/skills/brand-motion/SKILL.md`: the engines, `brand.json`, the timeline keys, the commands.
 3. The skill for the job:
    - a narrated story over real footage: `.claude/skills/story-reel/SKILL.md`
+   - product interface animation: `.claude/skills/ui-motion/SKILL.md`
    - footage: `.claude/skills/footage-sourcing/SKILL.md`
    - music, voice, sound and the mix: `.claude/skills/music-and-mix/SKILL.md`
    - QA: `.claude/skills/video-qa/SKILL.md`

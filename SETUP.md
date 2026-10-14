@@ -39,6 +39,8 @@ cd ../../../..
 
 The first caption run downloads a Whisper model (about 250 MB) into `.claude/skills/captions/scripts/models/`.
 
+For UI motion, also run `npm install` in `.claude/skills/ui-motion/scripts` (it drives your installed Google Chrome).
+
 ## 6. Optional tools
 
 - **yt-dlp**, to fetch sections of online video: `winget install yt-dlp` (macOS: `brew install yt-dlp`).

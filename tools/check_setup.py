@@ -54,6 +54,8 @@ major = int(ver.lstrip("v").split(".")[0]) if ver.startswith("v") else 0
 add("node 20+", major >= 20, ver or "install Node.js 20 or newer")
 nm = os.path.join(ROOT, ".claude", "skills", "captions", "scripts", "node_modules", "@huggingface", "transformers")
 add("captions npm install", os.path.isdir(nm), "cd .claude/skills/captions/scripts && npm install", False)
+pp = os.path.join(ROOT, ".claude", "skills", "ui-motion", "scripts", "node_modules", "puppeteer-core")
+add("ui-motion npm install", os.path.isdir(pp), "cd .claude/skills/ui-motion/scripts && npm install", False)
 
 add("yt-dlp", bool(shutil.which("yt-dlp")), "fetch sections of online video", False)
 add("demucs", bool(shutil.which("demucs")), "vocal checks and stem splits (own venv recommended)", False)
