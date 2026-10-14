@@ -1,0 +1,14 @@
+# The engines, QA and footage tools
+numpy>=1.26
+pillow>=10.0
+opencv-python-headless>=4.9
+uharfbuzz>=0.39
+fonttools>=4.40
+brotli>=1.1
+
+# Optional: music-and-mix/scripts/footcheck.py
+# soundfile>=0.12
+# librosa>=0.10
+
+# Demucs (vocal checks, stem splits) pulls in torch: give it its own venv.
+#   python -m venv .venv-demucs && .venv-demucs/Scripts/python -m pip install demucs

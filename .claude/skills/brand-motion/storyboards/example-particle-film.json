@@ -1,0 +1,189 @@
+{
+  "title": "Example particle film",
+  "notes": "Five shots on a 60 BPM pulse. Every cut starts as noise and resolves into a pattern; the grounds alternate. Replace the copy, the grounds, and the harmony with the brand's own, and add a logo item to the end card once brand.json has a logo. Runs with no brand.json on the neutral grounds.",
+  "pulse": 1.0,
+  "particles_per_px": 0.2,
+  "band": 9,
+  "tail": 0.6,
+  "score": "resonance",
+  "scenes": [
+    {
+      "id": "open",
+      "pulses": 2,
+      "ground": "dark",
+      "tone": "D5",
+      "pattern": {
+        "kind": "waves",
+        "count": 3,
+        "k": 5,
+        "seed": 2,
+        "drift": 0.15
+      },
+      "chord": [
+        "D3",
+        "A3",
+        "E4",
+        "F#4"
+      ],
+      "bass": "D2",
+      "melody": [
+        [
+          "A4",
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "one",
+      "pulses": 2,
+      "ground": "light",
+      "tone": "A4",
+      "pattern": {
+        "kind": "rect",
+        "n": 1,
+        "m": 3,
+        "spin": 0.02
+      },
+      "texts": [
+        {
+          "text": "One idea a shot",
+          "font": "sans",
+          "size": 34,
+          "at": 0.4
+        }
+      ],
+      "chord": [
+        "D3",
+        "A3",
+        "F#4"
+      ],
+      "bass": "A2",
+      "melody": [
+        [
+          "D5",
+          0.4
+        ]
+      ]
+    },
+    {
+      "id": "two",
+      "pulses": 2,
+      "ground": "dark",
+      "tone": "F#5",
+      "pattern": {
+        "kind": "grid",
+        "n": 2.2,
+        "m": 2.2,
+        "level": 0.15,
+        "spin": 0.03
+      },
+      "texts": [
+        {
+          "text": "Seven words at most",
+          "font": "sans",
+          "size": 34,
+          "at": 0.4
+        }
+      ],
+      "chord": [
+        "D3",
+        "A3",
+        "E4"
+      ],
+      "bass": "D2",
+      "melody": [
+        [
+          "F#5",
+          0.4
+        ]
+      ]
+    },
+    {
+      "id": "three",
+      "pulses": 3,
+      "ground": "light",
+      "tone": "E5",
+      "pattern": {
+        "kind": "chirp",
+        "k": 12,
+        "g": 1.1
+      },
+      "texts": [
+        {
+          "text": "Then it resolves",
+          "font": "serif",
+          "size": 46,
+          "at": 0.5
+        }
+      ],
+      "chord": [
+        "E3",
+        "B3",
+        "G#4"
+      ],
+      "bass": "E2",
+      "melody": [
+        [
+          "B4",
+          0.5
+        ]
+      ]
+    },
+    {
+      "id": "end",
+      "pulses": 4,
+      "ground": "dark",
+      "tone": "D5",
+      "pattern": {
+        "kind": "polar",
+        "k": 20,
+        "n": 18,
+        "stagger": true,
+        "hollow": 0.3,
+        "squash": 1.3,
+        "spin": 0.015
+      },
+      "dot": {
+        "at": 0.2,
+        "radius": 3.5
+      },
+      "texts": [
+        {
+          "text": "Your line|here.",
+          "font": "serif",
+          "size": 56,
+          "at": 0.35,
+          "gap": 40
+        }
+      ],
+      "dissolve_last": 1.2,
+      "band": 6,
+      "still": 0.6,
+      "render": {
+        "hi_from": 3.2
+      },
+      "chord": [
+        "D2",
+        "A2",
+        "E3",
+        "F#3",
+        "B3"
+      ],
+      "bass": "D2",
+      "melody": [
+        [
+          "F#5",
+          0.2
+        ],
+        [
+          "A4",
+          0.35
+        ],
+        [
+          "E5",
+          2.0
+        ]
+      ]
+    }
+  ]
+}

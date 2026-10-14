@@ -1,0 +1,55 @@
+# Your projects stay on your machine
+projects/*
+!projects/README.md
+
+# Media anywhere
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.m4a
+*.mp3
+*.wav
+*.aac
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/**/*.png
+!docs/**/*.jpg
+
+# Example outputs
+.claude/skills/brand-motion/examples/*/footage/
+.claude/skills/brand-motion/examples/*/takes/
+.claude/skills/brand-motion/examples/*/timeline.json
+
+# Fonts and brand files (licences follow the foundry; keep them out of git)
+brand/fonts/
+brand/logo/
+*.otf
+*.ttf
+*.woff
+*.woff2
+
+# Environments, models, caches
+.venv/
+.venv-*/
+node_modules/
+.claude/skills/captions/scripts/models/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+.mcp.json
+*.key
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

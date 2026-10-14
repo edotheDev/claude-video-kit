@@ -1,0 +1,235 @@
+{
+  "title": "Example footage film",
+  "notes": "Full-bleed observational footage at 4:5. Each shot opens soft and pulls into focus. One line plus a bracketed word float in opposite corners, one indicator marks a detail, and the last two shots turn the picture into grain and end on the logo. Clip paths are relative to this file; the README's smoke test writes footage/clip-01.mp4.",
+  "pulse": 1.0,
+  "particles_per_px": 0.14,
+  "band": 8,
+  "tail": 0.4,
+  "score": "resonance",
+  "scenes": [
+    {
+      "id": "first",
+      "seconds": 4.0,
+      "clip": "footage/clip-01.mp4",
+      "in": 0.5,
+      "center": [
+        0.5,
+        0.45
+      ],
+      "time": "07:10",
+      "focus": 1.2,
+      "warmth": 1.0,
+      "texts": [
+        {
+          "text": "An ordinary line",
+          "font": "serif",
+          "size": 62,
+          "x": 0.083,
+          "y": 0.1,
+          "anchor": "ls",
+          "at": 0.4
+        },
+        {
+          "text": "( a held word )",
+          "font": "serif_italic",
+          "size": 62,
+          "x": 0.917,
+          "y": 0.9,
+          "anchor": "rs",
+          "at": 1.0
+        }
+      ],
+      "chord": [
+        "E3",
+        "B3",
+        "G#4"
+      ],
+      "bass": "E2",
+      "melody": [
+        [
+          "B4",
+          0.4
+        ]
+      ]
+    },
+    {
+      "id": "second",
+      "seconds": 4.0,
+      "clip": "footage/clip-01.mp4",
+      "in": 5.0,
+      "center": [
+        0.5,
+        0.4
+      ],
+      "time": "09:15",
+      "focus": 1.0,
+      "texts": [
+        {
+          "text": "The next beat",
+          "font": "serif",
+          "size": 62,
+          "x": 0.083,
+          "y": 0.1,
+          "anchor": "ls",
+          "at": 0.3
+        }
+      ],
+      "callout": {
+        "to": [
+          0.62,
+          0.42
+        ],
+        "label_at": [
+          0.3,
+          0.3
+        ],
+        "label": "a detail",
+        "tone": "light",
+        "at": 1.3
+      },
+      "chord": [
+        "E3",
+        "B3",
+        "C#4"
+      ],
+      "bass": "C#3",
+      "melody": [
+        [
+          "G#4",
+          0.3
+        ]
+      ]
+    },
+    {
+      "id": "grain",
+      "seconds": 4.0,
+      "settle": 0.4,
+      "pull": 1.2,
+      "grain_fade": [
+        0.0,
+        0.8,
+        0.45
+      ],
+      "pattern": {
+        "kind": "voiceprint",
+        "k": 10,
+        "n": 6,
+        "mix": 0.45,
+        "spin": 0.03
+      },
+      "texts": [
+        {
+          "text": "It was all there,",
+          "font": "serif",
+          "size": 62,
+          "x": 0.083,
+          "y": 0.13,
+          "anchor": "ls",
+          "at": 0.4
+        },
+        {
+          "text": "( in the picture )",
+          "font": "serif_italic",
+          "size": 62,
+          "x": 0.917,
+          "y": 0.89,
+          "anchor": "rs",
+          "at": 1.0
+        }
+      ],
+      "chord": [
+        "E3",
+        "B3",
+        "G#4",
+        "D#5"
+      ],
+      "bass": "E2",
+      "melody": [
+        [
+          "E5",
+          0.4
+        ],
+        [
+          "B4",
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "end",
+      "seconds": 4.0,
+      "calm": true,
+      "settle": 0.01,
+      "pull": 1.2,
+      "grain_fade": [
+        0.0,
+        0.8,
+        0.35
+      ],
+      "pattern": {
+        "kind": "voiceprint",
+        "k": 10,
+        "n": 6,
+        "mix": 0.45,
+        "spin": 0.03,
+        "rot": 0.12,
+        "breathe": 0.0
+      },
+      "texts": [
+        {
+          "text": "Your tagline",
+          "font": "serif",
+          "size": 62,
+          "x": 0.083,
+          "y": 0.13,
+          "anchor": "ls",
+          "at": 0.3
+        },
+        {
+          "text": "( here )",
+          "font": "serif_italic",
+          "size": 62,
+          "x": 0.917,
+          "y": 0.89,
+          "anchor": "rs",
+          "at": 0.9
+        }
+      ],
+      "callout": {
+        "to": [
+          0.5,
+          0.5
+        ],
+        "label_at": [
+          0.82,
+          0.83
+        ],
+        "label": "",
+        "tone": "light",
+        "at": 1.3
+      },
+      "chord": [
+        "E2",
+        "B2",
+        "G#3",
+        "D#4",
+        "F#4"
+      ],
+      "bass": "E2",
+      "melody": [
+        [
+          "B4",
+          0.3
+        ],
+        [
+          "E5",
+          0.9
+        ],
+        [
+          "G#5",
+          1.8
+        ]
+      ]
+    }
+  ]
+}
