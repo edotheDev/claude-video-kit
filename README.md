@@ -6,17 +6,17 @@ Clone it, open it in Claude Code, and ask for an edit.
 
 ## Examples
 
-Silent excerpts from brand films made with this kit. Credits: [docs/examples/CREDITS.md](docs/examples/CREDITS.md).
+Silent excerpts from films made with these agents and skills: brand films, a narrated story reel and a fan edit. Credits: [docs/examples/CREDITS.md](docs/examples/CREDITS.md).
 
 <table>
 <tr>
-<td width="33%" valign="top"><img src="docs/examples/ui-motion.webp" width="100%" alt="UI motion: an inbox where every reply arrives as a draft"><br><b>UI motion</b><br>The product's interface rebuilt in HTML, animated as a pure function of time and captured frame by frame. <code>ui-motion</code></td>
-<td width="33%" valign="top"><img src="docs/examples/tracking-overlay.webp" width="100%" alt="Real footage with a machine vision tracking overlay"><br><b>Tracking overlay</b><br>Real footage with boxes that follow real motion, and a line that builds word by word. <code>fieldfilm</code> + <code>tracker</code></td>
-<td width="33%" valign="top"><img src="docs/examples/music-montage.webp" width="100%" alt="A montage of real footage cut to music with a sentence inking in"><br><b>Music montage</b><br>Real footage in its own colour, cut on the track's beat grid, a sentence inking in over it. <code>montage</code></td>
+<td width="36%" valign="top"><img src="docs/examples/story-reel.webp" width="100%" alt="A narrated story reel with headlines highlighted as they are said"><br><b>Story reel</b><br>A true story told over real footage: headlines pushed in with the key phrase highlighted as it is said, counts and big words on the beat. <code>story-reel</code></td>
+<td width="40%" valign="top"><img src="docs/examples/anime-edit.webp" width="100%" alt="An anime edit with gears meshing on the beat"><br><b>Anime edit</b><br>A trend sound edit: gears built up and meshing on the beats, anime and manga layered through them, impact frames on every hit. <code>motion-craft</code></td>
+<td width="24%" valign="top"><img src="docs/examples/ui-motion.webp" width="100%" alt="UI motion: an inbox where every reply arrives as a draft"><br><b>UI motion</b><br>The product's interface rebuilt in HTML, animated as a pure function of time, captured frame by frame. <code>ui-motion</code></td>
 </tr>
 <tr>
 <td valign="top"><img src="docs/examples/fast-cut.webp" width="100%" alt="A voice led fast cut on archive and Super 8 footage"><br><b>Voice led fast cut</b><br>Takes cut to the voice's words and the music's beats; big type, a graph, the voice's waveform, microscopy. <code>cutfilm</code></td>
-<td valign="top"><img src="docs/examples/slow-story.webp" width="100%" alt="A slow story on archive film with words appearing as they are said"><br><b>Slow story</b><br>Public domain archive film, words centred and fading in as they are said, a typed record card. <code>cutfilm</code> + <code>specfilm</code></td>
+<td valign="top"><img src="docs/examples/slow-story.webp" width="100%" alt="A slow story on archive film with words appearing as they are said"><br><b>Slow story</b><br>Public domain archive film, words centred and fading in as they are said, a typed record card. <code>specfilm</code></td>
 <td valign="top"><img src="docs/examples/spec-sheet.webp" width="100%" alt="A spec sheet launch film with typed mono text and re-flowing boxes"><br><b>Spec sheet</b><br>Typed mono, boxes that re-flow between layouts, counters over real footage. <code>specfilm</code></td>
 </tr>
 </table>
